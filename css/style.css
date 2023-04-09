@@ -49,9 +49,12 @@ nav {
 }
 
 .flags {
+	position: absolute;
+	top: 5px;
+	right: 80px;
 	display: inline-block;
 	/* width: 20%; */
-	padding: 0 30px;
+	/* padding: 0 30px; */
 	/*for test, why is break from top?*/
 	/* background-color: blue;  */
 }
@@ -61,8 +64,11 @@ nav {
 }
 
 .burger-icon {
+	position: absolute;
+	top: 15px;
+	right: 20px;
 	display: inline-block;
-	line-height: 60px;
+	/* line-height: 60px; */
 	font-size: 30px;
 	background: none;
 	border: none;
@@ -72,7 +78,7 @@ nav {
 /* hero grafika */
 .header {
 	position: relative;
-	height: 500px;
+	height: 400px;
 	/* height: calc(100vh - 60px); */
 	background-image: url(../img/cables-small.jpg);
 	background-size: cover;
@@ -134,6 +140,12 @@ nav {
 	padding: 0 20px 0 20px ;
 	font-weight: bold;
 	text-align: justify;
+}
+
+.phone {
+	text-decoration: none;
+	color: gold;
+	font-weight: bold;
 }
 
 .photos {
