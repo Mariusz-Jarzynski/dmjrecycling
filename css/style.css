@@ -145,7 +145,18 @@ nav {
 	border: 2px solid black;
 	border-radius: 20px;
 	box-shadow: 3px 3px 5px #000;
-	
+}
+
+.photos-van {
+	margin: 0 auto 10px auto;
+	background-image: url(../img/van.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	width: 90%;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px #000;
 }
 
 .list {
@@ -174,14 +185,21 @@ footer {
 	background-color: #61300D;
 }
 
-/* nawigacja powyżej 768px */
-@media(min-width: 768px) {
+/* nawigacja powyżej 768px - to dal tableta 7 calowego*/
+
+/* nawigacja powyżej 992px - to dal tableta 10 calowego*/
+
+/* nawigacja powyżej 1200px - komputer, laptop*/
+
+@media(min-width: 1200px) {
 	.burger-icon {
 		display: none;
 	}
+
 	.nav_menu {
 		display: inline-block;
 	}
+
 	.nav_menu a {
 		text-transform: uppercase;
 		text-decoration: none;
@@ -190,11 +208,27 @@ footer {
 		/* for test only */
 		/* background-color: darkgreen; */
 	}
+
 	.header {
 		background-image: url(../img/cables-big.jpg);
+		height: calc(100vh - 60px);
 	}
+
+	.info {
+		display: inline-block;
+		width: 49%;
+		font-size: 26px;
+	}
+
 	.photos {
 		display: inline-block;
+		width: 50%;
 		background-image: url(../img/metal-big.jpg);
 	}
+
+	.photos-van {
+		display: inline-block;
+		width: 50%;
+	}
+
 }
