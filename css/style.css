@@ -72,7 +72,7 @@ nav {
 /* hero grafika */
 .header {
 	position: relative;
-	height: 700px;
+	height: 600px;
 	/* height: calc(100vh - 60px); */
 	background-image: url(../img/cables-small.jpg);
 	background-size: cover;
