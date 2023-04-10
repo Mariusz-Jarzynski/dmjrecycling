@@ -149,24 +149,24 @@ nav {
 }
 
 .photos {
-	margin: 0 auto 10px auto;
+	margin: 0 20px 10px 20px;
 	background-image: url(../img/metal-small.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
-	width: 90%;
+	/* width: 90%; */
 	border: 2px solid black;
 	border-radius: 20px;
 	box-shadow: 3px 3px 5px #000;
 }
 
 .photos-van {
-	margin: 0 auto 10px auto;
+	margin: 0 20px 10px 20px;
 	background-image: url(../img/van.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 600px;
-	width: 90%;
+	/* width: 90%; */
 	border: 2px solid black;
 	border-radius: 20px;
 	box-shadow: 3px 3px 5px #000;
@@ -229,7 +229,7 @@ footer {
 
 	.info {
 		display: inline-block;
-		width: 49%;
+		width: 46%;
 		font-size: 26px;
 	}
 
