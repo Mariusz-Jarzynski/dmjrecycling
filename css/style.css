@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
@@ -17,6 +21,9 @@ body {
 }
 
 nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
 	height: 60px;
 	line-height: 60px;
 	background-color: #064848;
@@ -48,15 +55,15 @@ nav {
 	display: none;
 }
 
+.scroll-margin {
+	scroll-margin-top: 60px;
+}
+
 .flags {
 	position: absolute;
 	top: 5px;
 	right: 80px;
 	display: inline-block;
-	/* width: 20%; */
-	/* padding: 0 30px; */
-	/*for test, why is break from top?*/
-	/* background-color: blue;  */
 }
 
 .flag {
@@ -68,7 +75,6 @@ nav {
 	top: 15px;
 	right: 20px;
 	display: inline-block;
-	/* line-height: 60px; */
 	font-size: 30px;
 	background: none;
 	border: none;
@@ -78,7 +84,7 @@ nav {
 /* hero grafika */
 .header {
 	position: relative;
-	height: 500px;
+	height: 540px;
 	/* height: calc(100vh - 60px); */
 	background-image: url(../img/cables-small.jpg);
 	background-size: cover;
@@ -112,32 +118,47 @@ nav {
 
 /* sekcja - main */
 .bg-light {
-	padding: 10px;
+	padding: 20px 0 20px 0;
 	width: 100%;
 	background-color: #e7f6f6;
 	color: #064848;
 }
 
 .bg-dark {
-	padding: 10px;
+	padding: 20px 0 20px 0;
 	width: 100%;
 	background-color: #064848;
 }
 
 .section-title {
-	margin: 20px 0;
-	padding-left: 20px;
+	padding: 0px 0 20px 0;
+	text-transform: uppercase;
+}
+
+.section-title-offering {
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.section-title-contact {
+	padding: 10px 0 10px 0;
 	text-transform: uppercase;
 }
 
 .info {
-	/* margin-bottom: 10px; */
-	padding: 0 20px 20px 20px;
+	padding: 0 20px 0px 20px;
 	text-align: justify;
+	vertical-align: top;
+}
+
+.info-contact {
+	padding: 0 20px 0px 20px;
+	text-align: justify;
+	vertical-align: top;
 }
 
 .info-list {
-	padding: 0 20px 0 20px ;
+	padding: 0 20px 0 20px;
 	font-weight: bold;
 	text-align: justify;
 }
@@ -149,7 +170,7 @@ nav {
 }
 
 .photos {
-	margin: 0 20px 10px 20px;
+	margin: 10px 20px 0px 20px;
 	background-image: url(../img/metal-small.jpg);
 	background-size: cover;
 	background-position: center;
@@ -160,16 +181,17 @@ nav {
 	box-shadow: 3px 3px 5px #000;
 }
 
-.photos-van {
-	margin: 0 20px 10px 20px;
+.metal {
+	background-image: url(../img/metal-small.jpg);
+}
+
+.van2 {
+	background-image: url(../img/van2.jpeg);
+	background-position: 60% 0;
+}
+
+.van {
 	background-image: url(../img/van.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	/* width: 90%; */
-	border: 2px solid black;
-	border-radius: 20px;
-	box-shadow: 3px 3px 5px #000;
 }
 
 .list {
@@ -178,24 +200,19 @@ nav {
 }
 
 .list-contact {
-	padding-left: 20px;
 	list-style-position: inside;
 	list-style-type: none;
 }
 
-table {
-	padding-left: 20px;
-}
-
 td {
-	width: 100px;
+	width: 140px;
 }
 
 footer {
 	text-align: center;
 	padding: 20px 30px;
 	text-transform: uppercase;
-	background-color: #61300D;
+	background-color: #61300d;
 }
 
 /* nawigacja powyżej 768px - to dal tableta 7 calowego*/
@@ -204,7 +221,7 @@ footer {
 
 /* nawigacja powyżej 1200px - komputer, laptop*/
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
 	.burger-icon {
 		display: none;
 	}
@@ -214,12 +231,25 @@ footer {
 	}
 
 	.nav_menu a {
+		position: relative;
+		left: 270px;
 		text-transform: uppercase;
 		text-decoration: none;
 		color: aliceblue;
 		padding: 20px 30px;
 		/* for test only */
 		/* background-color: darkgreen; */
+		transition: background-color 1s;
+	}
+
+	.nav_menu a:hover {
+		background-color: goldenrod;
+		color: darkgreen;
+		font-weight: bold;
+	}
+
+	.flags {
+		right: 260px;
 	}
 
 	.header {
@@ -236,12 +266,13 @@ footer {
 	.photos {
 		display: inline-block;
 		width: 50%;
+	}
+
+	.metal {
 		background-image: url(../img/metal-big.jpg);
 	}
 
-	.photos-van {
-		display: inline-block;
-		width: 50%;
+	.van {
+		height: 600px;
 	}
-
 }
