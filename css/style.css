@@ -27,6 +27,7 @@ nav {
 	height: 60px;
 	line-height: 60px;
 	background-color: #064848;
+	border-bottom: 1px solid gold;
 }
 
 .nav_logo {
@@ -149,6 +150,12 @@ nav {
 	padding: 0 20px 0px 20px;
 	text-align: justify;
 	vertical-align: top;
+	/* for test only */
+	/* background-color: burlywood; */
+}
+
+p {
+	padding-bottom: 10px;
 }
 
 .info-contact {
@@ -221,7 +228,7 @@ footer {
 
 /* nawigacja powyżej 1200px - komputer, laptop*/
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 	.burger-icon {
 		display: none;
 	}
@@ -257,15 +264,22 @@ footer {
 		height: calc(100vh - 60px);
 	}
 
+	.bg-light, .bg-dark {
+		height: calc(100vh - 60px);
+	}
+
 	.info {
 		display: inline-block;
 		width: 46%;
-		font-size: 26px;
+		padding-top: 60px;
+		/* font-size: 18px; */
 	}
 
 	.photos {
 		display: inline-block;
 		width: 50%;
+		/* height: 500px; */
+		margin-top: 50px;
 	}
 
 	.metal {
@@ -273,6 +287,9 @@ footer {
 	}
 
 	.van {
-		height: 600px;
+		/* height: 600px; */
+		height: calc(90vh - 60px);
+		margin-top: 20px;
 	}
 }
+
