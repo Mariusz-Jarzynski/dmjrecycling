@@ -27,7 +27,7 @@ nav {
 	height: 60px;
 	line-height: 60px;
 	background-color: #064848;
-	border-bottom: 1px solid gold;
+	border-bottom: 2px solid gold;
 }
 
 .nav_logo {
@@ -131,6 +131,12 @@ nav {
 	background-color: #064848;
 }
 
+.bg-dark-contact {
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: #064848;
+}
+
 .section-title {
 	padding: 0px 0 20px 0;
 	text-transform: uppercase;
@@ -222,13 +228,19 @@ footer {
 	background-color: #61300d;
 }
 
+.fa-brands {
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+}
+
 /* nawigacja powyżej 768px - to dal tableta 7 calowego*/
 
 /* nawigacja powyżej 992px - to dal tableta 10 calowego*/
 
 /* nawigacja powyżej 1200px - komputer, laptop*/
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.burger-icon {
 		display: none;
 	}
@@ -239,14 +251,14 @@ footer {
 
 	.nav_menu a {
 		position: relative;
-		left: 270px;
+		left: 10vw;
 		text-transform: uppercase;
 		text-decoration: none;
 		color: aliceblue;
 		padding: 20px 30px;
+		transition: background-color 1s;
 		/* for test only */
 		/* background-color: darkgreen; */
-		transition: background-color 1s;
 	}
 
 	.nav_menu a:hover {
@@ -256,12 +268,19 @@ footer {
 	}
 
 	.flags {
-		right: 260px;
+		left: 80%;
 	}
 
 	.header {
 		background-image: url(../img/cables-big.jpg);
 		height: calc(100vh - 60px);
+	}
+
+	.hero-text h1 {
+		display: block;
+		width: 600px;
+		font-size: 60px;
+		/* background-color: aqua; */
 	}
 
 	.bg-light, .bg-dark {
