@@ -87,9 +87,10 @@ nav {
 	position: relative;
 	height: 540px;
 	/* height: calc(100vh - 60px); */
-	background-image: url(../img/cables-small.jpg);
+	/* background-image: url(../img/cables-small.jpg); */
+	background-image: url(../img/van2.jpeg);
 	background-size: cover;
-	background-position: center;
+	background-position: 60%;
 }
 
 .hero-bg {
@@ -272,7 +273,7 @@ footer {
 	}
 
 	.header {
-		background-image: url(../img/cables-big.jpg);
+		/* background-image: url(../img/cables-big.jpg); */
 		height: calc(100vh - 60px);
 	}
 
@@ -283,7 +284,8 @@ footer {
 		/* background-color: aqua; */
 	}
 
-	.bg-light, .bg-dark {
+	.bg-light,
+	.bg-dark {
 		height: calc(100vh - 60px);
 	}
 
@@ -311,4 +313,3 @@ footer {
 		margin-top: 20px;
 	}
 }
-
