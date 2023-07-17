@@ -131,7 +131,10 @@ nav {
 }
 
 .hero-text h2 span {
-	background-color:#1E90FF ;
+	color: blue;
+	background-color:#ecff1e;
+	text-shadow: none;
+	font-weight: bold;
 	padding: 3px 8px;
 	border-radius: 20px;
 }
@@ -310,7 +313,6 @@ footer {
 	}
 
 	.hero-text h2 span {
-		background-color:#1E90FF ;
 		padding: 5px 10px;
 		border-radius: 20px;
 	}
