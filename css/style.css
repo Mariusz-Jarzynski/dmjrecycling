@@ -102,7 +102,7 @@ nav {
 
 .hero-text h1 {
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 40px;
@@ -120,10 +120,10 @@ nav {
 
 .hero-text h2 {
 	position: absolute;
-	top: 70%;
+	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 40px;
+	font-size: 30px;
 	color: gold;
 	font-weight: bold;
 	text-shadow: 5px 5px 7px #000;
@@ -308,7 +308,7 @@ footer {
 	.hero-text h2 {
 		display: block;
 		width: 600px;
-		font-size: 60px;
+		font-size: 40px;
 		/* background-color: aqua; */
 	}
 
